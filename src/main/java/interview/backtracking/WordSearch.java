@@ -6,6 +6,8 @@ import java.util.Arrays;
 
 /**
  * Created by zly on 2018/2/7.
+ *
+ * 代码速度有点慢，效率需要改进
  */
 public class WordSearch {
     public static void main(String[] args) {

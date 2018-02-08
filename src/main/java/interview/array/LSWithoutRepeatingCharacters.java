@@ -3,6 +3,7 @@ package interview.array;
 /**
  * Created by zly on 2018/2/6.
  * LS means longest substring
+ * LSQ means longest subsequence
  */
 public class LSWithoutRepeatingCharacters {
     public static void main(String[] args) {

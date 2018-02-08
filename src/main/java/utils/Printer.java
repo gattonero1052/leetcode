@@ -8,11 +8,17 @@ import java.util.stream.Collectors;
  * Created by zly on 2018/2/5.
  */
 public class Printer {
+    //print str
+    public static void print(String string){
+        System.out.println(string);
+    }
+
+    //print bool
     public static void print(boolean bool){
         System.out.println(bool);
     }
 
-    //pring int
+    //print int
     public static void print(int obj){
         System.out.println(obj);
     }

@@ -4,6 +4,7 @@ import utils.Printer;
 
 /**
  * Created by zly on 2018/2/8.
+ * 用原数组前一位保存dp结果就行了
  */
 public class JumpGame {
     public static void main(String[] args) {
