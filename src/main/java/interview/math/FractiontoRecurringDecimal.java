@@ -9,7 +9,7 @@ import java.util.Map;
  * Created by zly on 2018/2/8.
  * 1.要考虑负数
  * 2.考虑到负无穷，要用 long 类型操作
- * 3.前导的0也要加到余数表中
+ * 3.前导的0也要加到余数表中（就是不用一开始补0）
  */
 
 public class FractiontoRecurringDecimal {
