@@ -7,7 +7,9 @@ import java.util.Map;
 
 /**
  * Created by zly on 2018/2/8.
- * 要考虑负数
+ * 1.要考虑负数
+ * 2.考虑到负无穷，要用 long 类型操作
+ * 3.前导的0也要加到余数表中
  */
 
 public class FractiontoRecurringDecimal {
@@ -15,7 +17,9 @@ public class FractiontoRecurringDecimal {
         Printer.print(fractionToDecimal(-2147483648,10));
         Printer.print(fractionToDecimal(111,7));
         Printer.print(fractionToDecimal(-50,8));
-        Printer.print(fractionToDecimal(1,99));
+        Printer.print(fractionToDecimal(1,99));//
+        Printer.print(fractionToDecimal(1,7));//
+        Printer.print(fractionToDecimal(1,663));//
     }
 
     public static String fractionToDecimal(int numerator, int denominator) {
@@ -41,11 +45,11 @@ public class FractiontoRecurringDecimal {
 
         while(numeratorl!=0){
 
-            while(numeratorl<denominatorl){//一开始补0
-                numeratorl*=10;
-                res.append('0');
-                end++;
-            }
+//            while(numeratorl<denominatorl){//一开始补0
+//                numeratorl*=10;
+//                res.append('0');
+//                end++;
+//            }
 
             int cur = (int)(numeratorl/denominatorl);
             if(maps[cur].containsKey(numeratorl)){
