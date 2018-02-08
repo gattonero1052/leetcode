@@ -8,6 +8,10 @@ import java.util.stream.Collectors;
  * Created by zly on 2018/2/5.
  */
 public class Printer {
+    public static void print(boolean bool){
+        System.out.println(bool);
+    }
+
     //pring int
     public static void print(int obj){
         System.out.println(obj);
