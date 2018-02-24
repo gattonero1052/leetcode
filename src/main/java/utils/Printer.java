@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 public class Printer {
 
     //print str
-    public static void print(String string){
+    public static void print(Object string){
         System.out.println(string);
     }
 
